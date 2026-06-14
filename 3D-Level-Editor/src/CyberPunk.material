@@ -1,0 +1,33 @@
+vertex_program CyberPunkVP hlsl
+{
+    source CyberPunk.hlsl
+    entry_point VS
+    target vs_2_0
+}
+
+fragment_program CyberPunkFP hlsl
+{
+    source CyberPunk.hlsl
+    entry_point PS
+    target ps_2_0
+}
+
+material CyberPunkMaterial
+{
+    technique
+    {
+        pass
+        {
+            depth_check off
+            depth_write off
+            vertex_program_ref CyberPunkVP {}
+            fragment_program_ref CyberPunkFP {}
+            
+            texture_unit
+            {
+                tex_address_mode clamp
+                filtering trilinear
+            }
+        }
+    }
+}

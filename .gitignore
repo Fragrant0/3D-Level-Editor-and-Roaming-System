@@ -1,0 +1,40 @@
+# Ignore build / IDE directories
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Bb]in/
+[Ob]j/
+*.user
+*.suo
+*.db
+*.opendb
+*.sdf
+*.ipch
+*.log
+*.tlog
+*.lastbuildstate
+*.unsuccessfulbuild
+*.cache
+*.ilk
+*.pdb
+*.obj
+*.exe
+*.dll
+*.lib
+*.ncb
+*.aps
+
+# Ignore all Word documents
+*.doc
+*.docx
+
+# Ignore raw screen recordings by default
+*.mp4
+# Allow presentation video in assets folder
+!assets/**/*.mp4
+
+# Temporary and backup files
+*~
+*.tmp
+*.bak

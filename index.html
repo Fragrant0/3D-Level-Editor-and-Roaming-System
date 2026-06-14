@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>演示视频 | 3D关卡编辑器与漫游系统</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0b0f19;
+      color: #f3f4f6;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+    .container {
+      text-align: center;
+      width: 100%;
+      max-width: 1000px;
+    }
+    .title {
+      margin-bottom: 24px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: #ffffff;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+    .video-wrapper {
+      background: #000000;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 1px 1px rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .btn-back {
+      display: inline-block;
+      padding: 12px 30px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 30px;
+      color: #9ca3af;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .btn-back:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.3);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">3D关卡编辑器与漫游系统 - 项目视频演示</div>
+    <div class="video-wrapper">
+      <video controls autoplay name="media" preload="auto">
+        <source src="assets/character-roaming.mp4" type="video/mp4">
+        您的浏览器不支持 HTML5 视频播放。
+      </video>
+    </div>
+    <a href="https://github.com/Fragrant0/3D-Level-Editor-and-Roaming-System" class="btn-back">返回 GitHub 仓库主页</a>
+  </div>
+</body>
+</html>
